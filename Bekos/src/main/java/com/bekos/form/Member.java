@@ -1,19 +1,45 @@
 package com.bekos.form;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MEMBER")
 public class Member {
 	
+	@Id
+	@Column(name="ID")
+	@GeneratedValue
 	private Integer id;
 	
-	private String firstName;
+	@Column(name="USERNAME")
+	private String userName;
 	
-	private String lastName;
-	
-	private String email;
-	
+	@Column(name="PASSWORD")
 	private String password;
 	
+	@Column(name="FIRSTNAME")
+	private String firstName;
+	
+	@Column(name="LASTNAME")
+	private String lastName;
+	
+	@Column(name="EMAIL")
+	private String email;
+
+	@Column(name="BIRTHDAY")
+	private String birthday;
+
+	@Column(name="GENDER")
+	private String gender;
+	
+	@Column(name="ADDRESS")
 	private String address;
 	
+	@Column(name="TELEPHONE")
 	private String telephone;
 	
 	public Integer getId() {
@@ -22,6 +48,14 @@ public class Member {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getFirstName() {
@@ -54,6 +88,22 @@ public class Member {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getAddress() {
