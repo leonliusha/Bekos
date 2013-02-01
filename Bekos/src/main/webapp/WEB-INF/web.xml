@@ -1,12 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://JAVA.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+<!--
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.5//EN"
  "http://java.sun.com/dtd/web-app_2_5.dtd" >
-
-<web-app xmlns="http://java.sun.com/xml/ns/javaee"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-		http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-		version="2.5">
+ -->
 		
   <display-name>Archetype Created Web Application</display-name>
   
@@ -15,7 +17,7 @@
   	<servlet-class>
   		org.springframework.web.servlet.DispatcherServlet
   	</servlet-class>
-  	<laod-on-startup>1</laod-on-startup>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
   
   <servlet-mapping>
