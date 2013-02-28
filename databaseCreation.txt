@@ -1,0 +1,13 @@
+te table MEMBER(
+ id INT PRIMARY KEY AUTO_INCREMENT
+  firstName VARCHAR(30),
+   lastName VARCHAR(30),
+    password VARCHAR(30),
+     userName VARCHAR(30),
+      email VARCHAR(30),
+       birthday VARCHAR(30),
+        gender VARCHAR(30),
+	 address VARCHAR(30),
+	  telephone VARCHAR(30),
+	   created TIMESTAMP DEFAULT NOW()
+	    );
